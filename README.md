@@ -1,4 +1,4 @@
-# **Concepto de algoritmos datos y programas**
+# <center> **Concepto de algoritmos datos y programas**<center/>
 
 * Analizar problemas, poniendo enfasis en la mdoelizacion, abstracción y en la modularización de los problemas
 * Obtener una expresión sintética, precisa y documentada de los problemas y su solución
@@ -65,37 +65,39 @@ Es una clase de objetos de datos ligados a un conjunto de operaciones para crear
 * Tienen un conjunto de operaciones permitidas
 * Tienen una representacion interna
 
-### **3.1 SIMPLE**
+## **3.1 SIMPLE**
 
-#### **3.1.1 DEFINIDO POR EL LENGUAJE:** Son provistos por el lenguaje y tanto la representacion como sus operaciones y valores son reservadas al mismo
+Aquellos que toman un unico valor, en un momento determinado, de todos los permitidos para ese tipo.
 
-#### **3.1.2 DEFINIDO POR EL PROGRAMADOR:** Permiten definir nuevos tipos de datos a partir de los datos simples
+### **3.1.1 DEFINIDO POR EL LENGUAJE:** Son provistos por el lenguaje y tanto la representacion como sus operaciones y valores son reservadas al mismo
 
-#### **NUMERICO**
+### **NUMERICO**
 
 Representa el conjunto de numeros que se pueden necesitar. Estos numeros pueden ser enteros o reales.
 
-#### **LOGICO**
+### **LOGICO**
 
 Permite reporesentar datos que pueden tomar dos valores verdadero o false.
 
-#### **CARACTER**
+### **CARACTER**
 
 Representa un conjunto finito y ordenado de caracteres que la computadora reconoce. Un dato de tipo caracter contiene solo un caracter
 
-### **3.2 COMPUESTO**
+## **3.2 COMPUESTO**
 
-#### **STRING** Representa un conjunto finito de caracteres. Como máximo representa 256 caracteres. En general se utilizan para representar nombres
+Pueden tomar varios valores a la vez que guardan una relacion logica entre ellos, bajo un unico nombre.
+
+### **STRING** Representa un conjunto finito de caracteres. Como máximo representa 256 caracteres. En general se utilizan para representar nombres
 
 ___
 
 ## **4 VARIABLES & CONSTANTES**
 
-### **VARIABLES**:
+### **VARIABLES**
 
 Es una zona de memoria cuyo contenido va a ser alguno de los tipos mencionados arriba. La direccion inicial de esta zona se asocia con el nombre de la variable. Puede cambiar su valor durante el programa.
 
-### **CONSTANTES**:
+### **CONSTANTES**
 
 Es una zona de memoria cuyo contenido va a ser alguno de los tipos mencionados arriba. La dirección inicial de esta zona se asocia con el nombre de la variable. NO puede cambiar su valor durante el programa
 
@@ -109,22 +111,23 @@ ___
 
 ## **5 PRE & POST CONDICIONES**
 
-### **PRE CONDICION**: Es la información que se conoce como verdadera antes de iniciar el programa o modulo.
+### **PRE CONDICION**: Es la información que se conoce como verdadera antes de iniciar el programa o modulo
 
-#### **POST CONDICION**: es la informacion que debería ser verdadera al concluir el programa o modulo, si se complen adecuadamente los pasos especificados.
+#### **POST CONDICION**: es la informacion que debería ser verdadera al concluir el programa o modulo, si se complen adecuadamente los pasos especificados
 
 ___
+
 ## **6 ESTRUCTURAS DE CONTROL**
 
-### Todos los lenguajes de programacion tienen un conjunto minimo de instrucciones que permiten especificar el control del algoritmo que se quiere implementar. Como mínimo deben contener: secuencia, decisión e iteración.
+### Todos los lenguajes de programacion tienen un conjunto minimo de instrucciones que permiten especificar el control del algoritmo que se quiere implementar. Como mínimo deben contener: secuencia, decisión e iteración
 
 ![Image](/Media/Estructuras_de_control.png)
 
-### **6.1 SECUENCIA:** 
+### **6.1 SECUENCIA:**
 
 La estructura de control más simple, está representada por una sucesión de operaciones (por ej. asignaciones), en el que la orden de ejecución coincide con el orden físico de aparición de las instrucciones.
 
-### **6.2 DECISION**:
+### **6.2 DECISION**
 
 En un algoritmo representativo de un problema real es necesario tomar decisiones en función de los datos del problema. La estructura básica de decision entre dos alternativas es la que se representa simbólicamente:
 
@@ -132,7 +135,7 @@ En un algoritmo representativo de un problema real es necesario tomar decisiones
 
 En otras palabras: If (condicion) then...
 
-### **6.3 SELECCION**:
+### **6.3 SELECCION**
 
 Permite realizar distintas acciones dependiendl del valor de la variable de tipo ordinal
 
@@ -170,10 +173,212 @@ Ejecutan las acciones luego evalúan la condicion y se ejecuntan las acciones mi
 ![](/Media/postcondicional.png)
 
 ### **Repeat ``codigo`` until (condicion)**
+
 ___
 Resumiendo pre y post
 
 ![](/Media/pre%20y%20post.png)
 
 ___
+
+## **6.5 REPETICION**
+
+Es una extension natural de la secuencia. Consiste en repetir N veces un bloque de acciones. Este numero de ceces que se deben ejecutar las acciones es fijo y conocido de antemano.
+
+![](/Media/repeticion.png)
+
+**for indice: valor inicial to valor final do**
+____
+
+## Tipo de dato
+
+### **3.1.2 DEFINIDO POR EL USUARIO/PROGRAMADOR:** Permiten definir nuevos tipos de datos a partir de los datos simples
+
+Permiten definir nuevos tipos de datos a partir de los datos simples.
+
+![Image](/Media/definidos%20por%20el%20usuario.png)
+
+![Image](/Media/TDU.png)
+
+### **VENTAJAS**
+
+### 1- **Flexibilidad**
+
+En el caso de ser necesario modificar la forma en que se representa el dato, sólo se debe modificar una declaración en lugar de un conjunto de declaraciones de variables.
+
+### 2- **Documentacion**
+
+Se pueden usar como identificador de los tipos, nombres y autoexplicativos, facilitando de esta manera el entendimiento y lectura del programa.
+
+### 3- **Seguridad**
+
+Se reducen los errores por uso de operaciones inadecuadas del dato a manejar, y se pueden obtener programas mas confiables...
+
+___
+
+### **SUBRANGO**
+
+Es un tipo ordinal que consiste en una sucesión de valores de un tipo ordinal (predefinido o definido por el usuario) tomado como base.
+
+**Operaciones Permitidas**: Asignacion, Comparacion, Todas las operaciones permitidas para el tipo base
+
+**Operaciones NO permitidas**: Depende del tipo de base
+
+___
+___
+___
+
+# <center> **MODULARIZACION**
+
+Significa dividir un problema en partes funcionalmente independientes, que encapsulan operaciones y datos.
+
+No se trata simplemente de subdividir el codigo en un sistema de software en bloques con un numero de instrucciones dado
+
+Se trata de separar en funciones lógicas con datos propios y datos de comunicacion perfectamente especificados.
+
+* Cada subproblema está en un mismo nivel de detalle
+* Cada subproblema puede resolverse independientemente
+* Las soluciones de los subproblemas pueden combinarse para resolver el problema original
+
+## **MODULO**
+
+Tarea especifica bien definida, se comunican entre sí adecuadamente y cooperan para conseguir un objetivo común.
+
+Encapsula acciones, tareas o funciones.
+
+En ellos se pueden representar losobjetivos relevantes del problema a resolver.
+
+Existen diferentes metodologías para usar los modulos en programas, en nuestro caso, *METODOLOGÍA TOP-DOWN*
+
+![Image](/Media/modularizacion.png)
+
+## **MODULARIZACION**: Procedimientos
+
+Conjunto de instrucciones que realizan una tarea especifica y retorna 0,1 o más valores.
+
+## **MODULARIZACION**: Funciones
+
+Conjunto de instrucciones que realizan una tarea especifica y retorna 1 valor de dato **simple.**
+
+Ambos modulos se invocan por su nombre.
+
+____
+
+# <center> **ALCANCES DE VARIABLES** <center/>
+
+![Image](/Media/alcance%20de%20variables.png)
+
+### **Variables globales**
+
+Pueden ser utilizadas en todo el programa (incluyendo modulos)
+
+### **Variables locales al proceso**
+
+Pueden ser usadas sólo en el proceso(modulo) que están declaradas.
+
+### **Variables locales al programa**
+
+Pueden ser usadas sólo en el cuerpo del programa.
+
+<br>
+
+## <center> COMUNICACION ENTRE MODULOS <center/>
+
+### <center>VARIABLES GLOBALES & PARAMETROS <center/>
+
+### Parametros: 
+La solucion a estos problemas ocasionados por el uso de variables globales es una combinacion de ocultamiento de datos (DATA HIDING) y uso de parámetros.
+
+* El ocultamiento de datos significa que los datos exclusivos de un módulo no deben ser "visibles" o utilizables por los demas modulos
+* El uso de parametros significa que los datos compartidos se deben especificar como parámetros que se trasmiten entre modulos
+___
+#### <center> <span style = 'color:darkorange'> **VALOR** </span>
+
+El modulo recibe un valor, puede realizar operaciones y/o calculos, pero no producirá ningún cambio ni tampoco tendrá incidencia fuera del módulo.
+
+Un dato de entrada por valor es llamado parámetro IN y significa que el módulo recibe (sobre una variable local) un valor proviniente de otro módulo (o del programa principal)
+
+
+####  <center> <span style = 'color:green'> **REFERENCIA** </span>
+
+El moodulo recibe una **dirección**, puede realizar operaciones y/o cálculos que producirán cambios y tendrán incidencia fuera del módulo
+
+La comunicación por referencia (OUT, INOUT) significa que el módulo recibe el nombre de una variable (referencia a una dirección) conocida en otros módulos del sistema
+
+Puede operar con ella y su valor original dentro del modulo, y las modificaciones que se produzcan se reflejan en los demas módulos que conocen la variable.
+___
+
+* El numero y tipo de los argumentos utilizados en la invocación a un módulo deben coincidir con el número y tipo de parametros del encabezamiento del modulo
+* Un parámetro por valor debe ser tratado como una variable de la cuál el módulo hace una copia y utiliza localmente. Algunos lenguajes permiten la modificación local de un parámetro por valor, pero toda modificacion realiazda queda en el módulo ene l cual el parámetro es utilizado.
+* El número y tipod e los argumentos utilizados en la invocación a un módulo deben coincidir con el número y tipo de parámetros del ecnabezamiento del módulo.
+___
+
+## <center> <span style = 'color:lightblue'> **ESTRUCTURAS DE DATOS** </span> </center>
+### <center> <span style = 'color:purple'> **ESTRUCTURADOS** </span> </center>
+
+### Permite al programador definir un tipo al que se asocian diferentes datos que tienen valores lógicamente relacionados y asociados
+
+![Image](/Media/clasificacion.png)
+
+## <ins>**Elementos:**</ins> Depende de si los elementos son del mismo tipo;
+
+* ### **Homogénea**: *Los elementos que la componen son del mismo tipo*
+
+* ### **Heterogénea**: *Los elementos que la componen pueden ser de distinto tipo*
+
+## <ins>**Acceso:**</ins> Hace referencia a como se pueden acceder a los elementos que la componen
+
+* ### **Secuencial**: *Para acceder a un elemento particular se debe respetar un orden predeterminado, por ejemplo, pasando por todos los elementos que le preceden, por ese orden*
+
+* ### **Directo**: *Se puede acceder a un elemento particular, directamente, sin necesidad de pasar por los anteriores a él. por ejemplo, referenciando a una posición*
+
+## <ins>**Tamaño:**</ins> Hace referencia a si la estructura puede variar su tamaño durante la ejecución del programa
+
+* ### **Estatica**: *El tamaño de la estructura no varía durante la ejecución del programa*
+
+* ### **Dinamica**: *El tamaño de la estructura puede variar durante la ejecución del programa*
+
+## <ins>**Linealidad:**</ins> Hace referencia a como se encuentran almacenados los elementos que la componen
+
+* ### **Lineal**: *Está formada pr ninguno, uno o varios elementos  que guardan una relación de adyacencia ordenada donde a c ada elemento le sigue uno y le precede uno, solamente.*
+
+* ### **No lineal**: *Para un elemento dado pueden existir 0,1 o mas elementos que le suceden y 0,1,o mas elementos que le preceden*
+
+___
+
+## <center> **REGISTRO** </center>
+
+* COMPUESTO & Definido por el programador
+* Es un tipo de datos estructurados, que permite agrupar diferentes clases de datos a una estructura única bajo un solo nombre
+* **Heterogénea**: Los elementos pueden ser de distinto tipo (pueden haber registros con todos los elemetnos del mismo tipo)
+* **Estática**: El tamaño no cambia durante la ejecución del programa (se calcula en el momento de compilación)
+* **Campos**: Representan cada uno de los datos que forman el registro
+
+## <center> **VECTOR** </center>
+
+* COMPUESTO & Definido por el programador
+* Es una estructura de adtos compuesta que permite acceder a cada componente por una variable índice, que da la posición de la componente dentro de la estructura de datos
+* Es una colección de elementos que se guarda consecutivamente en la memoria y se pueden referenciar a través de un índice.
+* **Homogénea**: Los elementos son del mismo tipo
+* **Estática**: El tamaño no cambia durante la ejecución del programa (se calcula en el momento de compilación)
+* **Indexada**: Para acceder a cada elemento de la estructura se debe utilizar una variable '***Indice***' que es de tipo ordinal.
+
+### **RECORRIDOS**
+
+* ###  **Total**: Implica analizar todos los elementos del vector, lo que lleva a recorrer completamente la estructura.
+
+* ###  **Parcial**: Implica analiazr los elementos del vector, hasta encontrar aquel que cumple con lo pedido. Puede ocurrir que se recorra todo el vector.
+
+
+### **DIMENSIÓN**
+
+* ###  **Fisica**: Se especifica en el momento de la declaración y determina su ocupación máxima de memoria. <br> La cantidad de memoria total reservada no variará durante la ejecución del programa.
+
+* ###  **Lógica**: Se determina cuando se cargan contenidos a los elementos del arreglo. <br> Indica la cantidad de posiciones de memoria ocupadas con contenido real. Nunca puede superar la dimensión físcia.
+
+![Image](/Media/dimension.png)
+
+#### Al momento de buscar un elemento en el vector:
+![Image](/Media/vector%20ordenado.png
+)
 
