@@ -81,8 +81,15 @@ ___
 ### **DIMENSIÓN**
 
 * ###  **Fisica**: Se especifica en el momento de la declaración y determina su ocupación máxima de memoria. <br> La cantidad de memoria total reservada no variará durante la ejecución del programa.
+    Es la cantidad máxima de elementos que se pueden guardar en el arreglo. No puede modificarse durante la ejecucion del programa.
 
 * ###  **Lógica**: Se determina cuando se cargan contenidos a los elementos del arreglo. <br> Indica la cantidad de posiciones de memoria ocupadas con contenido real. Nunca puede superar la dimensión físcia.
+    Es la cantidad de elementos reales que se guardan en el arreglo.<br>
+    Puede modificarse durante la ejecución del programa.<br>
+    NUNCA puede ser mayor a la dimension fisica (se debe tener control de esto)
+    
+<br>
+<br>
 
 ![Image](/Media/dimension.png)
 
@@ -260,7 +267,7 @@ ___
 
 ### <ins>**Linealidad:**</ins> Hace referencia a como se encuentran almacenados los elementos que la componen
 
-* ### **Lineal**: *Está formada pr ninguno, uno o varios elementos  que guardan una relación de adyacencia ordenada donde a c ada elemento le sigue uno y le precede uno, solamente.*
+* ### **Lineal**: *Está formada pr ninguno, uno o varios elementos  que guardan una relación de adyacencia ordenada donde a cada elemento le sigue uno y le precede uno.*
 
 * ### **No lineal**: *Para un elemento dado pueden existir 0,1 o mas elementos que le suceden y 0,1,o mas elementos que le preceden*
 ___
