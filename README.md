@@ -8,9 +8,9 @@
 
 ### 3) [Alocacion de Memoria y eficiencia](Alocacion,_memoria_y_eficiencia.md), donde se detalla lo dado en los powerpoint acerca de Eficiencia
 
-### 4) [VECTORES](seccion_vector.md): Seccion exclusiva para el contenido de vectores
+### 4) [VECTORES](Seccion_Vector.md): Sección exclusiva para el contenido de vectores
 
-### 5) [LISTAS](seccion_lista.md): Seccion exclusiva para el contenido de listas
+### 5) [LISTAS](Seccion_Lista.md): Sección exclusiva para el contenido de listas
 
 Todo lo que se encuentre en estos archivos está RESUMIDO en su totalidad de los ppt brindados por la materia CADP 2024 de la UNLP.
 ___
