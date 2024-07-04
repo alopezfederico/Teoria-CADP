@@ -7,7 +7,7 @@ Hasta ahora cualquier variable que se declare en un programa es alojada en la ME
 Las variables declarardas permanecen en la memoria estática durante toda la ejecucion del programa, mas allá de que sigan siendo utilizadas o no.<br>
 
 Obviamente al permanecer en la memoria siguen ocupando memoria.
-
+ 
 ![](/Media/alocacion%20de%20memoria.png)
 
 * ***CHAR***: 1 Byte

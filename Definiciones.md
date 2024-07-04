@@ -303,7 +303,7 @@ Existen diferentes metodologías para usar los modulos en programas, en nuestro 
 <br>
 
 ## 7.1 COMUNICACION ENTRE MODULOS 
-
+ 
 ###  VARIABLES GLOBALES & PARAMETROS
 ### PARAMETROS:  La solucion a estos problemas ocasionados por el uso de variables globales es una combinacion de ocultamiento de datos (DATA HIDING) y uso de parámetros.
 

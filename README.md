@@ -9,5 +9,5 @@
 ### 3) [Alocacion, Memoria y eficiencia](Alocacion,_memoria_y_eficiencia.md), donde se detalla lo dado en los powerpoint acerca de Eficiencia
 
 ___
-
+ 
  Federico Antonio Lopez
